@@ -1,0 +1,66 @@
+.download {
+  padding-top: 140px;
+  padding-bottom: 130px;
+  background: url(../images/download.png) no-repeat;
+  text-align: center;
+  color: white;
+  &-heading {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    margin-bottom: 10px;
+    letter-spacing: 0.2px;
+  }
+  &-info {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 60px;
+    &-mobile {
+      display: none;
+    }
+  }
+  &-button {
+    display: flex;
+    justify-content: center;
+    gap: 0 16px;
+    &-mobile {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .download {
+    background: none;
+    background-color: $dark-color;
+  }
+  .download-content {
+    max-width: 330px;
+  }
+  .download-info-mobile {
+    display: block;
+    color: $gray-light-color;
+  }
+  .download-info-pc {
+    display: none;
+  }
+  .download-button {
+    .button {
+      font-size: 16px;
+      line-height: 28px;
+      padding: 18px 31px;
+    }
+    .button--outline {
+      color: white;
+      padding: 16px 45px;
+    }
+  }
+  .download-button-pc {
+    display: none;
+  }
+  .download-button-mobile {
+    display: flex;
+    color: white;
+    justify-content: center;
+  }
+}
